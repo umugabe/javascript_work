@@ -1,6 +1,8 @@
 function greatestValue(arr){
-    var sortedArray=arr.sort((a,b)=>b-a);
-    return sortedArray[0];
+
+    return Math.max(...arr);
 
 }
-const test = 
+let values =[1,2,6,10,7,20];
+let greatest = greatestValue(values);
+console.log("The greatest value is:",greatest);
